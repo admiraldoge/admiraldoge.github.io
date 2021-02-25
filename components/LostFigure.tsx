@@ -56,7 +56,7 @@ const LostFigure: React.FunctionComponent<LostFigureProps> = ({ idx,type, color}
         config: {mass: 1, tension: 6, friction: 50}
     }))
 
-    const trans = (x, y):string => {
+    const trans = (x?, y?):string => {
         return `translate3d(${x}px,${y}px,0) rotate(${x}deg)`;
     }
 
@@ -86,7 +86,7 @@ const Figure = ({type,color}) => {
     }
 }
 
-const CircleStyles = (x,y) => {
+const CircleStyles = (x,y):object => {
     return {
         position: 'absolute',
         left: x,
