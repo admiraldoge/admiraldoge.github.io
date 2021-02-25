@@ -6,7 +6,7 @@ import AnimatedContainer from "../components/GeometricAnimationContainer";
 const Index: React.FunctionComponent = () => {
     return (
         <Layout title="Home">
-            <Title text={"Hola mi nombre es Maximilian Vino"}/>
+            <Title text={"Hi my name is Maximilian Vino"}/>
             <AnimatedContainer>
             </AnimatedContainer>
         </Layout>
