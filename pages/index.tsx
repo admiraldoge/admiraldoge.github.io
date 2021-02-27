@@ -3,12 +3,14 @@ import Layout from '../components/Layout'
 import styles from '../styles/index.module.scss'
 import GeometricAnimationContainer from "../components/GeometricAnimationContainer";
 import Projects from "../components/Projects";
+import AboutMe from "../components/AboutMe";
 
 const Index: React.FunctionComponent = () => {
     return (
         <Layout title="Home">
             <Title text={"Hi my name is Maximilian Vino"}/>
             <GeometricAnimationContainer/>
+            <AboutMe/>
             <Projects/>
         </Layout>
     )

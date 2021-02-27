@@ -10,42 +10,12 @@ const Projects: React.FunctionComponent = ({}) => (
         <Row align={"middle"} justify={"center"}>
             <Col span={24}>
                 <Row justify={"center"}>
-                    <h1>Mis proyectos</h1>
+                    <h1>My art</h1>
                 </Row>
                 <Row>
                     <Col span={12}>
                         <ProjectBox/>
                     </Col>
-                </Row>
-                <Row justify={"center"}>
-                    <h1>Mis proyectos</h1>
-                </Row>
-                <Row justify={"center"}>
-                    <h1>Mis proyectos</h1>
-                </Row>
-                <Row justify={"center"}>
-                    <h1>Mis proyectos</h1>
-                </Row>
-                <Row justify={"center"}>
-                    <h1>Mis proyectos</h1>
-                </Row>
-                <Row justify={"center"}>
-                    <h1>Mis proyectos</h1>
-                </Row>
-                <Row justify={"center"}>
-                    <h1>Mis proyectos</h1>
-                </Row>
-                <Row justify={"center"}>
-                    <h1>Mis proyectos</h1>
-                </Row>
-                <Row justify={"center"}>
-                    <h1>Mis proyectos</h1>
-                </Row>
-                <Row justify={"center"}>
-                    <h1>Mis proyectos</h1>
-                </Row>
-                <Row justify={"center"}>
-                    <h1>Mis proyectos</h1>
                 </Row>
             </Col>
         </Row>
