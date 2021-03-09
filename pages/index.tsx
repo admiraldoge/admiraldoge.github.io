@@ -8,10 +8,12 @@ import AboutMe from "../components/AboutMe";
 const Index: React.FunctionComponent = () => {
     return (
         <Layout title="Home">
-            <Title text={"Hi my name is Maximilian Vino"}/>
-            <GeometricAnimationContainer/>
-            <AboutMe/>
-            <Projects/>
+            <div className={styles.ctn}>
+                <Title text={"Hi, this is the Nash project."}/>
+                <GeometricAnimationContainer/>
+                <AboutMe/>
+                <Projects/>
+            </div>
         </Layout>
     )
 }
