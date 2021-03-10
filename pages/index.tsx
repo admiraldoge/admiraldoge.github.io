@@ -4,6 +4,7 @@ import styles from '../styles/index.module.scss'
 import GeometricAnimationContainer from "../components/GeometricAnimationContainer";
 import Projects from "../components/Projects";
 import AboutMe from "../components/AboutMe";
+import ContactMe from "../components/ContactMe";
 
 const Index: React.FunctionComponent = () => {
     return (
@@ -13,6 +14,7 @@ const Index: React.FunctionComponent = () => {
                 <GeometricAnimationContainer/>
                 <AboutMe/>
                 <Projects/>
+                <ContactMe/>
             </div>
         </Layout>
     )
