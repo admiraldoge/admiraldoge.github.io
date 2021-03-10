@@ -63,7 +63,7 @@ function Trail({ showText, children, ...props }) {
         <div style={cntStyles} {...props}>
             {trail.map(({ x, height, ...rest }, index) => (
                 <animated.div
-                    key={items[index]}
+                    key={items[index]['key']}
                     className="trails-text"
                     style={{ ...rest, transform: x.interpolate((x?) => `translate3d(0,${x}px,0)`) }}>
                     <animated.div style={{ height }}>

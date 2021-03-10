@@ -1,11 +1,6 @@
 import * as React from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
-import styles from '../styles/OrbitalCircle.module.scss'
 import {animated, useSpring} from 'react-spring'
 import {useEffect, useState} from "react";
-import WindowDimensions from "../utils/WindowDimensions";
-
 
 type OrbitalCircleProps = {
     idx: number,
@@ -22,32 +17,29 @@ type OrbitalCircleProps = {
 
 const OrbitalFigure: React.FunctionComponent<OrbitalCircleProps>
     = ({idx,radius,x,y,type, color, translateX= 0, translateY= 0,translateZ=0,figureSize}) => {
-    const [figures, setFigures] = useState({
-        rotation: 0,
-        key: idx
-    });
+    const [figures, setFigures] = useState(0);
 
-    const [firstPosition, setFirstPosition] = useState({
-        rotation: 0
+    const [firstRotation, setFirstRotation] = useState({
+        rotation: randomRotation(0)
     })
 
     useEffect(() => {
-        setSpring({rotation: 180});
+        setSpring({rotation: randomRotation(0)});
+    }, []);
+
+    useEffect(() => {
         const interval = setInterval(() => {
-            let nextTranslate = randomPosition(firstPosition.rotation);
-            setFigures({
-                rotation: nextTranslate,
-                key: idx
-            })
-            setSpring({rotation: nextTranslate});
-        }, 10000000);
+            let nextRotation = randomRotation(firstRotation.rotation);
+            setSpring({rotation: nextRotation});
+            setFigures(nextRotation);
+        }, 15000);
 
         return () => clearInterval(interval);
     }, [figures]);
 
     const [spring,setSpring] = useSpring(() => ({
-        rotation: [0],
-        config: {mass: 1, tension: 6, friction: 50}
+        rotation: 0,
+        config: {mass: 1, tension: 5, friction: 50}
     }))
 
     const trans = (rotation?):string => {
@@ -84,7 +76,7 @@ const Figure = ({type,color,size}) => {
 const HandStyle = (x,y,z,r,s):object => {
     return {
         position: 'absolute',
-        transform: `translate3d(${x}px,${y}px,${z}px)`,
+        transform: `translate3d(${x}px,${y}px,${z}px) rotate(${randomRotation(0)}deg)`,
         width: `${r*2}px`,
         textAlign: 'end',
         justifyContent: 'end',
@@ -115,8 +107,8 @@ const Triangle = ({color,size}) => {
     )
 }
 
-const randomPosition = (rotation) => {
-    let newRotation = Math.floor(Math.random() * ((260) - (0))) + (0);
+const randomRotation = (rotation) => {
+    let newRotation = Math.floor(Math.random() * ((rotation+360) - (rotation-360))) + (rotation-360);
     return newRotation;
 }
 

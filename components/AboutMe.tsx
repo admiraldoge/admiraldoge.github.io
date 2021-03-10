@@ -1,8 +1,8 @@
 import * as React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
-import styles from '../styles/AboutMe.module.scss'
 import 'antd/dist/antd.css';
+import styles from '../styles/AboutMe.module.scss'
 import {Col, Row} from "antd";
 import TrailText from "./TrailText";
 const AboutMe: React.FunctionComponent = ({}) => (
