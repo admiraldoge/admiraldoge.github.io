@@ -5,12 +5,14 @@ import GeometricAnimationContainer from "../components/GeometricAnimationContain
 import Projects from "../components/Projects";
 import AboutMe from "../components/AboutMe";
 import ContactMe from "../components/ContactMe";
+import PicassoAnimationContainer from "../components/PicassoAnimationContainer";
 
 const Index: React.FunctionComponent = () => {
     return (
         <Layout title="Home">
             <div className={styles.ctn}>
                 <Title text={"Hi, this is the Nash project."}/>
+                <PicassoAnimationContainer/>
                 <GeometricAnimationContainer/>
                 <AboutMe/>
                 <Projects/>
