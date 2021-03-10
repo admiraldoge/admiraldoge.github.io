@@ -20,7 +20,7 @@ type OrbitalCircleProps = {
     color: string
 }
 
-const OrbitalCircle: React.FunctionComponent<OrbitalCircleProps> 
+const OrbitalFigure: React.FunctionComponent<OrbitalCircleProps>
     = ({idx,radius,x,y,type, color, translateX= 0, translateY= 0,translateZ=0,figureSize}) => {
     const [figures, setFigures] = useState({
         rotation: 0,
@@ -120,4 +120,4 @@ const randomPosition = (rotation) => {
     return newRotation;
 }
 
-export default OrbitalCircle;
+export default OrbitalFigure;
