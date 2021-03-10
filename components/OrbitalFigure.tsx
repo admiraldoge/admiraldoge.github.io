@@ -9,8 +9,8 @@ import WindowDimensions from "../utils/WindowDimensions";
 
 type OrbitalCircleProps = {
     idx: number,
-    x: number,
-    y: number,
+    x?: number,
+    y?: number,
     radius: number,
     translateX?: number,
     translateY?: number,
