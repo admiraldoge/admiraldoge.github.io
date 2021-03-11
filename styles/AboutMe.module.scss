@@ -1,6 +1,7 @@
 .ctn {
   margin-top: 200px;
   margin-bottom: 200px;
+  z-index: -1;
 }
 .title {
   font-family: Lora-Bold;
@@ -11,4 +12,8 @@
 .description {
   font-family: Lora-Medium;
   font-size: 18px;
+}
+.animation {
+  width: 90%;
+  height: 90%;
 }

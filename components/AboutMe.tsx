@@ -7,8 +7,8 @@ import {Col, Row} from "antd";
 import TrailText from "./TrailText";
 const AboutMe: React.FunctionComponent = ({}) => (
     <div className={styles.ctn}>
-        <Row align={"middle"} justify={"center"}>
-            <Col span={12}>
+        <Row align={"middle"} justify={"space-between"}>
+            <Col xs={24} md={12}>
                 <Row justify={"center"}>
                     <Col span={24}>
                         <Row justify={"center"}>
@@ -29,9 +29,11 @@ const AboutMe: React.FunctionComponent = ({}) => (
                     </Col>
                 </Row>
             </Col>
-            <Col span={12}>
+            <Col xs={24} md={10}>
                 <Row justify={"center"}>
-                    <h1>Animation</h1>
+                    <Col xs={24}>
+                        <img className={styles.animation} src={'./svg/me.svg'}/>
+                    </Col>
                 </Row>
             </Col>
         </Row>

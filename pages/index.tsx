@@ -13,7 +13,6 @@ const Index: React.FunctionComponent = () => {
             <div className={styles.ctn}>
                 <Title text={"Hi, this is the Nash project."}/>
                 <PicassoAnimationContainer/>
-                <GeometricAnimationContainer/>
                 <AboutMe/>
                 <Projects/>
                 <ContactMe/>

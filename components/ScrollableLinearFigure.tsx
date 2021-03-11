@@ -36,11 +36,8 @@ const ScrollableLinearFigure: React.FunctionComponent<ScrollableLinearFigureProp
     useEffect(() => {
         function watchScroll() {
             window.addEventListener("scroll", logit);
-            console.log('scrollY: ',scrollY);
-            console.log('ratios: ',ratioX,ratioY)
             let transx = transX(scrollY,ratioX);
             let transy = transY(scrollY,ratioY);
-            console.log('trans: ',transx,transy);
             if(ratioX === 0) {
                 setSpring({xy: [startX,startY + transy]})
             } else if(ratioY === 0) {
