@@ -6,6 +6,7 @@ import LostFigure from "./LostFigure";
 import OrbitalFigure from "./OrbitalFigure";
 import Orbit from "./Orbit";
 import OrbitalAnimation from "./OrbitalAnimation";
+import ScrollableLinearFigure from "./ScrollableLinearFigure";
 const PicassoAnimationContainer: React.FunctionComponent = ({}) => (
     <div className={styles.ctn}>
         <OrbitalAnimation
@@ -35,6 +36,9 @@ const PicassoAnimationContainer: React.FunctionComponent = ({}) => (
             orbitProps={{color:"#05244D", width:2}}
             figureProps={{type: "triangle", color:"#a02921"}}
         />
+    <ScrollableLinearFigure idx={1} type={"circle"} color={"#a02921"} startX={1000} startY={200} endX={1000} endY={900} minScroll={0} maxScroll={900} figureSize={80}/>
+    <ScrollableLinearFigure idx={1} type={"circle"} color={"#a02921"} startX={500} startY={600} endX={900} endY={600} minScroll={0} maxScroll={900} figureSize={80}/>
+    <ScrollableLinearFigure idx={1} type={"circle"} color={"#a02921"} startX={300} startY={300} endX={600} endY={600} minScroll={0} maxScroll={900} figureSize={80}/>
     </div>
 )
 export default PicassoAnimationContainer
