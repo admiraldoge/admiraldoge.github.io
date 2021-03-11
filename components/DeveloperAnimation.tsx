@@ -7,9 +7,7 @@ const DeveloperAnimation: React.FunctionComponent = () => {
     const [figures, setFigures] = useState(0);
 
     return (
-        <div>
-            <img className={styles.animation} src={'./svg/me.svg'}/>
-        </div>
+        <img className={styles.animation} src={'./svg/me.svg'}/>
     )
 
 }

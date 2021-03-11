@@ -33,7 +33,11 @@ const AboutMe: React.FunctionComponent = ({}) => (
             <Col xs={24} md={10}>
                 <Row justify={"center"}>
                     <Col xs={24}>
-                        <DeveloperAnimation/>
+                        <Row justify={"center"}>
+                            <Col xs={20} sm={24}>
+                                <DeveloperAnimation/>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Col>

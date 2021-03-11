@@ -11,11 +11,12 @@ const Index: React.FunctionComponent = () => {
     return (
         <Layout title="Home">
             <div className={styles.ctn}>
-                <Title text={"Hi, this is the Nash project."}/>
-                <PicassoAnimationContainer/>
-                <AboutMe/>
-                <Projects/>
-                <ContactMe/>
+                <PicassoAnimationContainer>
+                    <Title text={"Hi, this is the Nash project."}/>
+                    <AboutMe/>
+                    <Projects/>
+                    <ContactMe/>
+                </PicassoAnimationContainer>
             </div>
         </Layout>
     )
@@ -23,7 +24,11 @@ const Index: React.FunctionComponent = () => {
 
 const Title = ({text}) => {
     return (
-        <div className={styles.title}>{text}</div>
+        <div className={styles.titleCtn}>
+            <div className={styles.title}>
+                {text}
+            </div>
+        </div>
     )
 };
 export default Index
