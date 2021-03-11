@@ -2,9 +2,10 @@ import * as React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import 'antd/dist/antd.css';
-import styles from '../styles/AboutMe.module.scss'
 import {Col, Row} from "antd";
+import styles from '../styles/AboutMe.module.scss'
 import TrailText from "./TrailText";
+import DeveloperAnimation from "./DeveloperAnimation";
 const AboutMe: React.FunctionComponent = ({}) => (
     <div className={styles.ctn}>
         <Row align={"middle"} justify={"space-between"}>
@@ -32,7 +33,7 @@ const AboutMe: React.FunctionComponent = ({}) => (
             <Col xs={24} md={10}>
                 <Row justify={"center"}>
                     <Col xs={24}>
-                        <img className={styles.animation} src={'./svg/me.svg'}/>
+                        <DeveloperAnimation/>
                     </Col>
                 </Row>
             </Col>
