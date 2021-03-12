@@ -17,10 +17,10 @@ const ProjectBox: React.FunctionComponent = ({}) => {
         function watchScroll() {
             window.addEventListener("scroll", logit);
             if(scrollY > 500 || scrollY < 120){
-                console.log('Hide');
+                //console.log('Hide');
                 setSpring({xy: [-window.innerWidth/9, 0]});
             }else if(scrollY > 120) {
-                console.log('Show');
+                //console.log('Show');
                 setSpring({xy: [window.innerWidth/9, 0]})
             }
         }

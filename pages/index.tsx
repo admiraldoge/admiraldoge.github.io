@@ -12,7 +12,7 @@ const Index: React.FunctionComponent = () => {
         <Layout title="Home">
             <div className={styles.ctn}>
                 <PicassoAnimationContainer>
-                    <Title text={"Hi, this is the Nash project."}/>
+                    <Title text={"Hi, I am Maximilian"}/>
                     <AboutMe/>
                     <Projects/>
                     <ContactMe/>
